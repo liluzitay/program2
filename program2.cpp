@@ -110,7 +110,7 @@ void squareInquiry(int number1, int number2){
   if(numOfSquares > 0){
     //listSquares(divisor, numOfSquares);
     cout << number1 << " has these factors (>1) that are square: ";
-    listSquares(listOfSquares, divisor, numOfSquares);
+    listSquares(listOfSquares[index], divisor, numOfSquares);
     cout << number2 << " is not square-free" << endl;
     containSquareFactor2 = true;
   }
