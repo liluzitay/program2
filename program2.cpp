@@ -16,6 +16,27 @@ void conclusionaryOutput(int, int, bool, bool);
 void listSquares(int, int);
 void squareInquiry(int, int);
 
+int main(){
+
+    int firstInt;
+    int secondInt;
+    cout << "Enter the 1st integer of the pair, between 2 and 5000: ";
+    cin >> firstInt;
+    while(firstInt < 2 || firstInt > 5000){
+        cout << "Invalid entry, Please try again: ";
+        cin >> firstInt;
+    }
+    cout << "Enter the 2nd integer of the pair, between 2 and 5000: ";
+    cin >> secondInt;
+    while(secondInt <2 || secondInt > 5000){
+        cout << "Invalid entry, Please try again: ";
+        cin >> secondInt;
+    }
+    squareInquiry(firstInt, secondInt);
+return 0;
+}
+
+
 
 void conclusionaryOutput(int number1, int number2, bool containSquareFactor1, bool containSquareFactor2){
     if(containSquareFactor1 == false && containSquareFactor2 == false){
@@ -100,28 +121,3 @@ void squareInquiry(int number1, int number2){
     }
   conclusionaryOutput(number1, number2,containSquareFactor1, containSquareFactor2);
 }  
-
-int main(){
-
-    int firstInt;
-    int secondInt;
-    cout << "Enter the 1st integer of the pair, between 2 and 5000: ";
-    cin >> firstInt;
-    while(firstInt < 2 || firstInt > 5000){
-        cout << "Invalid entry, Please try again: ";
-        cin >> firstInt;
-    }
-    cout << "Enter the 2nd integer of the pair, between 2 and 5000: ";
-    cin >> secondInt;
-    while(secondInt <2 || secondInt > 5000){
-        cout << "Invalid entry, Please try again: ";
-        cin >> secondInt;
-    }
-    squareInquiry(firstInt, secondInt);
-return 0;
-}
-
-
-
-
-
