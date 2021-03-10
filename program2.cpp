@@ -56,7 +56,7 @@ void conclusionaryOutput(int number1, int number2, bool containSquareFactor1, bo
 void listSquares(int listOfSquares[], int numOfSquares, int divisor){
   if (numOfSquares !=1){
     for(int index=0; index < numOfSquares; index++){
-      cout << divisor << " , ";
+      cout << listOfSquares[index]  << " , ";
 
     }
     cout << "\n";
